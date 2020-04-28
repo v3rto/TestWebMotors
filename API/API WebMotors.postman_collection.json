@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "c41c3994-ecae-495b-ada1-ebaecf33dabb",
+		"name": "API WebMotors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta Marca Webmotors",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\": \"Honda\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://desafioonline.webmotors.com.br/api/OnlineChallenge/Make?api_key=321\n",
+					"protocol": "http",
+					"host": [
+						"desafioonline",
+						"webmotors",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"OnlineChallenge",
+						"Make"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "321\n",
+							"description": "curl -X GET --header 'Accept: application/json' 'http://desafioonline.webmotors.com.br/api/OnlineChallenge/Make?api_key=321'\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://desafioonline.webmotors.com.br/api/OnlineChallenge/Version?ModelID=5\n",
+					"protocol": "http",
+					"host": [
+						"desafioonline",
+						"webmotors",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"OnlineChallenge",
+						"Version"
+					],
+					"query": [
+						{
+							"key": "ModelID",
+							"value": "5\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta Model",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://desafioonline.webmotors.com.br/api/OnlineChallenge/Model?MakeID=2\n",
+					"protocol": "http",
+					"host": [
+						"desafioonline",
+						"webmotors",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"OnlineChallenge",
+						"Model"
+					],
+					"query": [
+						{
+							"key": "MakeID",
+							"value": "2\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
